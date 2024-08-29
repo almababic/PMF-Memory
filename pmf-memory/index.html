@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<title>PMF Memory</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!--https://favicon.io/favicon-generator/-->
+	<link rel="icon" type="image/gif" href="slike/favicon.ico" sizes="16x16">
+
+	<!--https://www.w3schools.com/bootstrap/bootstrap_get_started.asp-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+	<div class="container" id="izbornik">
+
+		<div id="novaIgra">
+			<h1 onclick="igra()">Nova igra</h1>
+			<div id="igra">
+				<br>
+				<p>Odaberite jednu od 3 opcije kojom ćete odrediti motive koji će se pojavljivati u igri:</p>
+				<br>
+				<button onclick="osoblje()">Nastavno osoblje</button>
+				<button onclick="fakultet()">Slike fakulteta</button>
+				<button onclick="razno()">Razno</button>
+				<br><br>
+			</div>
+
+			<!--memory osoblje-->
+			<div class="container" id="osoblje">
+				<section class="memory" id="memory">
+					<!--pomocu data-oznaka cemo provjeravati da li su neke 2 kartice par-->
+					<div class="karticaOsoblje" data-oznaka="delalic">
+						<img class="slika" src="slike/Sead-Delalic.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaOsoblje" data-oznaka="delalic">
+						<img class="slika" src="slike/Sead-Delalic.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaOsoblje" data-oznaka="besirevic">
+						<img class="slika" src="slike/Admir-Besirevic.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaOsoblje" data-oznaka="besirevic">
+						<img class="slika" src="slike/Admir-Besirevic.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaOsoblje" data-oznaka="selmanovic">
+						<img class="slika" src="slike/Elmedin-Selmanovic.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaOsoblje" data-oznaka="selmanovic">
+						<img class="slika" src="slike/Elmedin-Selmanovic.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaOsoblje" data-oznaka="ribic">
+						<img class="slika" src="slike/Amela-Muratovic-Ribic.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaOsoblje" data-oznaka="ribic">
+						<img class="slika" src="slike/Amela-Muratovic-Ribic.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaOsoblje" data-oznaka="beso">
+						<img class="slika" src="slike/Emin-Beso.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaOsoblje" data-oznaka="beso">
+						<img class="slika" src="slike/Emin-Beso.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaOsoblje" data-oznaka="pilav">
+						<img class="slika" src="slike/Esmir-Pilav.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaOsoblje" data-oznaka="pilav">
+						<img class="slika" src="slike/Esmir-Pilav.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaOsoblje" data-oznaka="alihodzic">
+						<img class="slika" src="slike/Adis-Alihodzic.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaOsoblje" data-oznaka="alihodzic">
+						<img class="slika" src="slike/Adis-Alihodzic.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaOsoblje" data-oznaka="kalabusic">
+						<img class="slika" src="slike/Senada-Kalabusic.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaOsoblje" data-oznaka="kalabusic">
+						<img class="slika" src="slike/Senada-Kalabusic.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+				</section>
+
+				<br>
+			</div>
+			
+			<!--memory fakultet-->
+			<div class="container" id="fakultet">
+				<section class="memory" id="memory">
+					<!--pomocu data-oznaka cemo provjeravati da li su neke 2 kartice par-->
+					<div class="karticaFakultet" data-oznaka="abg">
+						<img class="slika" src="slike/ABG.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaFakultet" data-oznaka="abg">
+						<img class="slika" src="slike/ABG.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaFakultet" data-oznaka="hodnik">
+						<img class="slika" src="slike/hodnik.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaFakultet" data-oznaka="hodnik">
+						<img class="slika" src="slike/hodnik.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaFakultet" data-oznaka="kabinet">
+						<img class="slika" src="slike/kabinet.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaFakultet" data-oznaka="kabinet">
+						<img class="slika" src="slike/kabinet.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaFakultet" data-oznaka="vrc">
+						<img class="slika" src="slike/VRC.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaFakultet" data-oznaka="vrc">
+						<img class="slika" src="slike/VRC.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaFakultet" data-oznaka="pmf">
+						<img class="slika" src="slike/PMF.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaFakultet" data-oznaka="pmf">
+						<img class="slika" src="slike/PMF.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaFakultet" data-oznaka="pmf2">
+						<img class="slika" src="slike/PMF2.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaFakultet" data-oznaka="pmf2">
+						<img class="slika" src="slike/PMF2.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaFakultet" data-oznaka="rc">
+						<img class="slika" src="slike/RC.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaFakultet" data-oznaka="rc">
+						<img class="slika" src="slike/RC.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaFakultet" data-oznaka="stepenice">
+						<img class="slika" src="slike/stepenice.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaFakultet" data-oznaka="stepenice">
+						<img class="slika" src="slike/stepenice.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+				</section>
+
+				<br>
+			</div>
+
+			<!--memory razno-->
+			<div class="container" id="razno">
+				<section class="memory" id="memory">
+					<!--pomocu data-oznaka cemo provjeravati da li su neke 2 kartice par-->
+					<div class="karticaRazno" data-oznaka="delalic">
+						<img class="slika" src="slike/Sead-Delalic.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaRazno" data-oznaka="delalic">
+						<img class="slika" src="slike/Sead-Delalic.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaRazno" data-oznaka="selmanovic">
+						<img class="slika" src="slike/Elmedin-Selmanovic.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaRazno" data-oznaka="selmanovic">
+						<img class="slika" src="slike/Elmedin-Selmanovic.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaRazno" data-oznaka="ribic">
+						<img class="slika" src="slike/Amela-Muratovic-Ribic.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaRazno" data-oznaka="ribic">
+						<img class="slika" src="slike/Amela-Muratovic-Ribic.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaRazno" data-oznaka="besirevic">
+						<img class="slika" src="slike/Admir-Besirevic.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaRazno" data-oznaka="besirevic">
+						<img class="slika" src="slike/Admir-Besirevic.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaRazno" data-oznaka="pmf">
+						<img class="slika" src="slike/PMF.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaRazno" data-oznaka="pmf">
+						<img class="slika" src="slike/PMF.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaRazno" data-oznaka="pmf2">
+						<img class="slika" src="slike/PMF2.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaRazno" data-oznaka="pmf2">
+						<img class="slika" src="slike/PMF2.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaRazno" data-oznaka="rc">
+						<img class="slika" src="slike/RC.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaRazno" data-oznaka="rc">
+						<img class="slika" src="slike/RC.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaRazno" data-oznaka="abg">
+						<img class="slika" src="slike/ABG.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+
+					<div class="karticaRazno" data-oznaka="abg">
+						<img class="slika" src="slike/ABG.jpg" id="picture">
+						<img class="upitnik" src="slike/upitnik.jpg" id="picture">
+					</div>
+				</section>
+
+				<br>
+			</div>
+
+			<div id="krajIgre">
+					Vrijeme: 
+					<p id="vrijeme"> </p>
+
+					Broj poteza:
+					<p id="potezi"> </p>
+
+				<!--https://stackoverflow.com/questions/5480945/refreshing-page-on-click-of-a-button-->
+				<button onclick="window.location.reload();">Restart</button>
+			</div>
+
+		</div>
+
+		<div id="upute">
+			<h1 onclick="pravilaIgre()">Upute</h1>
+			<div id="pravilaIgre">
+				<br>
+				<p>
+					Igrica PMF Memory sastoji se od ploče na kojoj je poredano 2n kartica, gdje je n broj različitih
+					kartica. Svaka od n kartica sadrži neki od motiva Prirodno-matematičkog fakulteta. Kartice su
+					poredane slučajnim redoslijedom. Na slikama mogu biti profesori, asistenti, učionice, slike
+					fakulteta i drugi motivi. Svaka od kartica se na ploči nalazi tačno dva puta. Sve kartice su
+					okrenute licem (slikom) prema ploči. Igrač u svakom potezu bira dvije kartice, te ih okreće.
+					Ukoliko su na izabranim karticama jednaki motivi, kartice ostaju otvorene. Ukoliko su motivi
+					različiti, nakon kraćeg vremena, kartice se opet okreću licem prema ploči i igrač igra novi potez.
+					Igra završava kada igrač ispravno upari (otvori) sve kartice.
+				</p>
+			</div>
+		</div>
+
+		<div id="oProjektu">
+			<h1 onclick="projekat()">O projektu</h1>
+			<div id="projekat">
+				<br>
+				<p>Projekat PMF Memory je projekat rađen u sklopu predmeta Web Programiranje na <a href="https://pmf.unsa.ba/" target="blank">Prirodno-matematičkom fakultetu</a> u Sarajevu.</p>
+				<p>Detaljnije podatke o predmetu možete naći <a href="http://math.pmf.unsa.ba/wp-content/uploads/2021/04/Web-programiranje-2.pdf" target="blank">ovdje</a>.</p> <br>
+
+				<p>Podaci o autoru projekta:</p>
+				<p><span class="glyphicon glyphicon-user"></span> Alma Babić</p>
+				<p><span class="glyphicon glyphicon-home"></span> Sarajevo, BiH</p>
+				<p><span class="glyphicon glyphicon-calendar"></span> 05.05.1999.</p>
+				<p><span class="glyphicon glyphicon-phone"></span> 062/006-111</p>
+				<p><span class="glyphicon glyphicon-envelope"></span> almababic99@gmail.com</p>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="javascript.js"></script>
+
+</body>
+</html>
